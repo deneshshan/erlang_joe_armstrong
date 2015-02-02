@@ -1,0 +1,2 @@
+-module(shop1).
+-export([total/1]).
