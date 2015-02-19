@@ -9,5 +9,7 @@ ENV REFRESHED_AT 2015-02-12
 
 ADD . /home/app
 
-#WORKDIR /home/app/socket_dist
-#RUN erl -s kvs start -sname gandalf
+WORKDIR /home/app/socket_dist
+COPY .erlang.cookie /
+
+EXPOSE 22
