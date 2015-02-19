@@ -9,7 +9,9 @@ ENV REFRESHED_AT 2015-02-12
 
 ADD . /home/app
 
-WORKDIR /home/app/socket_dist
+WORKDIR /home/app
 COPY .erlang.cookie /
+RUN cp -r  .erlang_config /
 
 EXPOSE 22
+EXPOSE 1234
